@@ -16,11 +16,11 @@ function NavBar() {
    const handleMouseLeave = () => {
       setIsHover(false);
    };
-   const [navSize, setNavSize] = useState("10rem");
-   const [navColor, setNavColor] = useState("#red");
+   const [navSize, setNavSize] = useState("5rem");
+   const [navColor, setNavColor] = useState("red");
    const listenScrollEvent = () =>{
-    window.scrollY > 10 ? setNavColor("#52ab98") : setNavColor("#red")
-    window.scrollY > 10 ? setNavSize("5rem") : setNavSize("10rem")
+    window.scrollY > window.innerHeight ? setNavColor("#52ab98") : setNavColor("red")
+    window.scrollY > window.innerHeight ? setNavSize("5rem") : setNavSize("7rem")
    }
    useEffect(()=>{
     window.addEventListener("scroll",listenScrollEvent);
@@ -47,7 +47,8 @@ function NavBar() {
         style={{
           backgroundColor: navColor,
           height: navSize,
-          transition: "all 1s"
+          transition: "all 1s",
+          zIndex:'100'
         }}
       >
       <Navbar className="navbar-form" expand="lg">
