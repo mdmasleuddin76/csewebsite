@@ -1,0 +1,11 @@
+img{
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+a{
+    font-weight: 600;
+    color: #006cb8;
+    text-decoration: none;
+}

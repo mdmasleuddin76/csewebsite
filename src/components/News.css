@@ -1,0 +1,7 @@
+.cardImg{
+    transition: all .3s ease-in;
+    -o-object-fit: cover;
+    object-fit: cover;
+    font-family: object-fit cover;
+}
+
